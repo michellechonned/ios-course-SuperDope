@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var dopeLogo: UIImageView!
+    @IBOutlet weak var dopeBg: UIImageView!
+    @IBOutlet weak var undopeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func makeMeNotSoUnDope(sender: AnyObject) {
+        dopeLogo.hidden = false
+        dopeBg.hidden = false
+        undopeButton.hidden = true
+    }
 
 }
 
